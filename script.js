@@ -12,7 +12,7 @@ const progressBar = document.querySelector(".progress-bar");
 const progressBackground = document.querySelector(".progress-background");
 
 // Helper Functions
-const loadSong = () => {
+const loadAudio = () => {
   audioLength.innerHTML = convertTime(audio.duration);
 };
 
@@ -109,5 +109,7 @@ rewindButton.addEventListener("click", () => windAudio(-15));
 audio.addEventListener("timeupdate", updateProgress);
 progressBackground.addEventListener("click", setProgress);
 
-// load song
-loadSong();
+// load audio
+window.addEventListener("load", () => {
+  loadAudio();
+});
