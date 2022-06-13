@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Google.com -imzino</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+      <main class="container">
+        <div class="player-container">
+          <img src="images/thumbnail.jpeg" alt="thumbnail">
+
+          <article class="player-details">
+            <h1>The Briefing</h1>
+            <h3>PM's allies push for 'dream team'</h3>
+            <p>Danny Boyle</p>
+
+            <audio id="audio" src="audio/the-briefing.mp3" type="audio/mpeg"></audio>
+
+            <div class="progress-container">
+              <span class="progress-timer">
+                <p id="current-time">0:00</p> / 
+                <p id="audio-length">2:25</p>
+              </span>
+
+              <div class="progress-background">
+                <div class="progress-bar">
+                  <span class="progress-indicator"></span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <section class="player-controls">
+            <button id="speed">1x</button>
+            <span>
+              <button id="rewind">
+                <img src="images/wind-back.svg" alt="rewind">
+              </button>
+              
+              <button id="play">
+                <img src="images/play.svg" alt="play">
+              </button>
+              
+              <button id="forward">
+                <img src="images/wind-forward.svg" alt="forward">
+              </button>
+            </span>
+            <button id="info">
+            <img src="images/info.svg" alt="info">
+            </button>
+          </section> 
+        </div>
+      </main>
+
+      <script src="script.js"></script>
+    </body>
+</html>
+
+
+
+
+
+

@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  font-family: "Austin News Deck", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  max-width: 100vw;
+}
+
+h1 {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+h3 {
+  color: #767676;
+  font-size: 11px;
+  font-weight: 400;
+}
+
+p {
+  font-size: 9px;
+}
+
+button {
+  cursor: pointer;
+  color: #494949;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  padding: 1em;
+}
+
+.player-container {
+  max-width: 586px;
+  padding: 8px;
+  margin: 0 auto;
+  border: 1px solid #494949;
+  border-radius: 2px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 6px;
+}
+
+.player-container > img {
+  display: block;
+  height: 62px;
+  width: 62px;
+  border-radius: 3px;
+}
+
+.player-details {
+  position: relative;
+}
+
+.player-details > *:not(:first-child) {
+  margin-bottom: 2px;
+}
+
+.progress-container {
+  position: absolute;
+  bottom: 0;
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-size: 8px;
+  gap: 2px;
+}
+
+.progress-timer {
+  display: flex;
+  flex-direction: row;
+  text-indent: 2px;
+}
+
+.progress-background {
+  cursor: pointer;
+  min-width: 100%;
+  border-radius: 10px;
+  height: 2px;
+  background: #c4c4c4;
+}
+
+.progress-bar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 0%;
+  height: 2px;
+  background: #494949;
+}
+
+.progress-indicator {
+  width: 4px;
+  height: 4px;
+  background: #494949;
+  transform: rotate(45deg);
+}
+
+.player-controls {
+  grid-column: 1/3;
+  grid-row: 2;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1em;
+}
+
+.player-controls > span {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2em;
+}
+
+#audio-length {
+  color: #585858;
+}
+
+@media screen and (min-width: 480px) {
+  h1 {
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  h3 {
+    color: #767676;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  p,
+  span {
+    font-size: 12px;
+  }
+
+  .player-container {
+    padding: 12px;
+    align-items: center;
+  }
+
+  .player-container > img {
+    height: 114px;
+    width: 114px;
+    grid-row: 1/3;
+  }
+
+  .player-controls {
+    grid-column: 2;
+  }
+
+  .player-thumbnail {
+    height: 114px;
+    width: 114px;
+  }
+
+  .progress-container {
+    position: relative;
+  }
+}
